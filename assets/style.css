@@ -114,13 +114,13 @@ h3{
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #5B3825;
 	border-radius:0 ;
 }
 
 .gallery .nav-pills .active-tag{
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #5B3825;
 	border-radius:0 ;
 }
 
@@ -374,3 +374,27 @@ input[type="submit"] {
 	}
 }
 
+.adresse p{
+    margin-top: 100px;
+    text-align: right;
+    font-family: Spectral;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    top: 85px;
+    right: -64px;
+    
+}
+
+.adresse h3{
+    text-align: right;
+    font-family: Spectral;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px;
+    position: relative;
+    top: 170px;
+    right: -64px;
+    
+}
