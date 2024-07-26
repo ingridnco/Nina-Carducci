@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-		<title>Nina Carducci - Photographe</title>
+		<title>Nina Carducci - Photographe | Paris | Île-de-France</title>
+		<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Nina Carducci, photographe professionnelle passionnée, vous propose ses services partout en Île-de-France. Pour conserver une beau souvenir des moments qui vous tiennent à cœur, la technique au service de vos évènements.">
-        <link rel="stylesheet" href="./assets/bootstrap/purified/bootstrap.min.css">
+		<meta name="description" content="Nina Carducci, photographe professionnelle passionnée, vous propose ses services partout en Île-de-France. Pour conserver un beau souvenir des moments qui vous tiennent à cœur, la technique au service de vos évènements.">
+        <meta property="og:title" content="Nina Carducci - Photographe | Paris | Île-de-France">
+		<meta property="og:type" content="siteweb">
+		<meta property="og:image" content="https://nina-carducci.github.io/assets/images/nina.webp">
+		<meta property="og:description" content="Nina Carducci, photographe professionnelle passionnée, vous propose ses services partout en Île-de-France. Pour conserver un beau souvenir des moments qui vous tiennent à cœur, la technique au service de vos évènements.">
+		<link rel="stylesheet" href="./assets/bootstrap/purified/bootstrap.min.css">
         <link rel="stylesheet" href="./assets/style.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
         <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="./assets/maugallery.min.js" defer></script>
         <script src="./assets/scripts.min.js" defer></script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type":"LocalBusiness",
+              	"name": "Nina Carducci",
+              	"image": "https://nina-carducci.github.io/assets/images/nina.webp",
+              "telephone":"05 56 67 78 89",
+              "priceRange": "Abordable",
+			  "creator":{
+				"@type": "Person",
+				"knowsAbout":"Devenir photographe était pour moi une évidence. Comme si j’y étais prédestinée. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer. Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager avec plus grand nombre. C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de la lumière à chaque fois que vous poserez les yeux sur vos photos."
+				},
+			  "jobTitle": "Photographe professionnelle",
+			  "address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"postalCode": "33200",
+				"addressLocality": "Bordeaux",
+                "addressCountry": "FR",
+				"schedule":"Du lundi au vendredi de 10 h à 19 h"
+              }
+			}
+			</script>
     </head>
     <body>
-        <header class="top-header">
-            <h1 class="name">Nina Carducci</h1>
+        <header itemscope itemtype="https://schema.org/Photograph" class="top-header">
+            <h1 itemprop="creator" itemscope itemtype="https://schema.org/Person" class="name"><span itemprop="name">Nina Carducci</span><br><span class="sous-titre">Photographe pour mariages, concerts, entreprises, portraits</span></h1>
             <div class="nav">
                 <ul>
                     <li><a href="#about">À propos</a></li>
@@ -30,7 +57,7 @@
                 </ul>
             </div>
         </header>
-		<!-- <main> -->
+		<main>
 			<section id="header">
 				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-indicators">
@@ -59,13 +86,13 @@
 					</button>
 				</div>
 			</section>
-			<section id="about">
+			<section itemscope itemtype="https://schema.org/Person" id="about">
 				<div class="picture left">
-					<img src="./assets/images/nina.webp" alt="Auto-portrait de Nina Carducci">
+					<img itemprop="image" src="./assets/images/nina.webp" alt="Auto-portrait de Nina Carducci">
 				</div>
 				<div id="about-me">
-					<h2 class="about-me__title">A propos de moi</h2>
-					<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestinée. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
+					<h2 class="about-me__title">À propos de moi</h2>
+					<p itemprop="knowsAbout" class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestinée. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
 					<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager avec plus grand nombre. C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de la lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 				</div>
 			</section>
@@ -84,21 +111,21 @@
 						<img data-gallery-tag="Entreprises" class="gallery-item" alt="Jeune femme au visage souriant avec son ordinateur portable" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp">
 					</div>
 				</div>
-				<div class="quote">
+				<article class="quote">
 					<figure>
 						<blockquote>
-							<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+							<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
 						</blockquote>
 						<figcaption class="quote__author">- Richard Avedon</figcaption>
 					</figure>
-				</div>
+				</article>
 			</section>
 			<section id="services">
 				<h2 class="title">Mes services</h2>
-				<div class="container">
+				<div itemscope itemtype="https://schema.org/Person" class="container">
 					<div class="service">
 						<div class="service__description">
-							<h2>Shooting photo</h2>
+							<h2 itemprop="makesOffer">Shooting photo</h2>
 							<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos.</p>
 						</div>
 						<div class="service__price">
@@ -108,7 +135,7 @@
 					</div>
 					<div class="service">
 						<div class="service__description">
-							<h2>Retouches</h2>
+							<h2 itemprop="makesOffer">Retouches photo</h2>
 							<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficiez d’un rendu optimal pour vos publications.</p>
 						</div>
 						<div class="service__price">
@@ -118,7 +145,7 @@
 					</div>
 					<div class="service">
 						<div class="service__description">
-							<h2>Album photos</h2>
+							<h2 itemprop="makesOffer">Album photos</h2>
 							<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé.</p>
 						</div>
 						<div class="service__price">
@@ -131,13 +158,13 @@
 			<article class="quote">
 				<figure>
 					<blockquote>
-						<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie.</h1>
+						<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie.</p>
 					</blockquote>
 					<figcaption class="quote__author">- Richard Avedon</figcaption>
 				</figure>
 			</article>
-		<!-- </main> -->
-        <footer id="contact">
+		</main>
+        <footer itemscope itemtype="https://schema.org/Organization" id="contact">
             <div class="container">
                 <div class="form-container">
                     <h2>Une question ? Une demande de devis ?</h2>
@@ -153,11 +180,16 @@
                     </form>
                 </div>
                 <div class="picture right">
-                    <img src="./assets/images/camera.webp" alt="Photo d'un appareil Leica">
+                    <img itemprop="image" src="./assets/images/camera.webp" alt="Photo d'un appareil Leica">
                 </div>
             </div>
 			<div class="adresse">
-				<h3>Nina Carducci</h3><p>68 avenue Alsace-Lorraine<br>33200 Bordeaux<br>Téléphone : 05 56 67 78 89.<br>Du lundi au vendredi de 10 h à 19 h. </p>
+				<h3 itemprop="name">Nina Carducci</h3><h4 itemprop="jobTitle"><span>Photographe professionnelle</span></h4>
+				<p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+					<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span><br>
+						<span itemprop="postalCode">33200</span><span itemprop="addressLocality">Bordeaux</span><br>
+						<span itemprop="telephone">Téléphone : 05 56 67 78 89</span><br>
+						<span itemprop="schedule">Du lundi au vendredi de 10 h à 19 h.</span></p>
 			</div>
         </footer>
     </body>
